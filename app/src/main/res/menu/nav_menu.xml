@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Dashboard -->
+    <item
+        android:id="@+id/menu_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_recycle"
+        app:showAsAction="ifRoom" />
+
+    <!-- Training -->
+    <item
+        android:id="@+id/menu_training"
+        android:title="Training"
+        android:icon="@drawable/ic_rewards"
+        app:showAsAction="ifRoom" />
+
+    <!-- Reports -->
+    <item
+        android:id="@+id/menu_reports"
+        android:title="Reports"
+        android:icon="@drawable/ic_trash"
+        app:showAsAction="ifRoom" />
+
+    <!-- Facility Locator -->
+    <item
+        android:id="@+id/menu_facility"
+        android:title="Facilities"
+        android:icon="@drawable/ic_location"
+        app:showAsAction="ifRoom" />
+
+    <!-- Marketplace -->
+    <item
+        android:id="@+id/menu_marketplace"
+        android:title="Marketplace"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="ifRoom" />
+
+    <!-- Green Champions -->
+    <item
+        android:id="@+id/menu_champion"
+        android:title="Champions"
+        android:icon="@drawable/ic_rewards"
+        app:showAsAction="never" />
+
+    <!-- Profile -->
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="never" />
+
+    <!-- Settings -->
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="never" />
+
+</menu>

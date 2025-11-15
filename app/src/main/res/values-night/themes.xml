@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 🌙 Dark Theme Automatically Applied in Night Mode -->
+    <style name="Theme.GreenTrack" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Branding -->
+        <item name="colorPrimary">@color/primaryVariant</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+
+        <!-- Background and Surface -->
+        <item name="android:windowBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#CCCCCC</item>
+
+        <!-- Status & Navigation -->
+        <item name="android:statusBarColor">#0B3D2E</item>
+        <item name="android:navigationBarColor">#0B3D2E</item>
+
+        <!-- Buttons -->
+        <item name="materialButtonStyle">@style/Widget.GreenTrack.Button</item>
+
+
+
+    </style>
+
+</resources>

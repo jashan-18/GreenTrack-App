@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".TrainingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTrainingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training and Awareness"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn about waste segregation, composting, and recycling practices."
+            android:textSize="16sp"
+            android:textColor="@color/grayDark"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Card 1: Waste Segregation -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWasteSegregation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#E8F5E9"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/wastesegregation"
+                    android:contentDescription="Waste Segregation"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Waste Segregation"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Learn how to separate dry, wet, and hazardous waste for effective recycling."
+                    android:textSize="15sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnSegregationLearnMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:text="Watch Video"
+                    android:textSize="15sp"
+                    android:textColor="@color/onPrimary"
+                    android:background="@drawable/rounded_button"
+                    android:elevation="3dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_marginBottom="12dp"
+                        android:contentDescription="Composting"
+                        android:src="@drawable/ic_rewards" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="Composting Basics"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Understand the process of composting and how you can make nutrient-rich compost at home."
+                        android:textAlignment="center"
+                        android:textColor="@color/grayDark"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btnCompostingLearnMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/bg_gradient_button"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:text="Read Guide"
+                        android:textAlignment="center"
+                        android:textColor="@color/onPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2: Composting -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardComposting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#E8F5E9"
+            >
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3: Recycling -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRecycling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#E8F5E9"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_refresh"
+                    android:contentDescription="Recycling"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recycling Made Easy"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discover how different materials like plastic, glass, and paper can be recycled efficiently."
+                    android:textSize="15sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnRecyclingLearnMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Learn More"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/onPrimary"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_button"
+                    android:elevation="4dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

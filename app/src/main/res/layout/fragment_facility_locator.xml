@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_facility"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".FacilityLocatorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvFacilityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facility Locator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvFacilityIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find nearby recycling centers, composting units, and waste-to-energy plants."
+            android:textSize="16sp"
+            android:textColor="@color/grayDark"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Card 1: Recycling Center -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRecycling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#E8F5E9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgRecycling"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/centereco"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="Recycling Center"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tvRecyclingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eco Recycling Center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:gravity="center"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvRecyclingLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Green Avenue, Sector 21"
+                    android:textColor="@color/grayDark"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRecyclingTiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timings: 9:00 AM – 6:00 PM"
+                    android:textColor="@color/grayDark"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnRecyclingDirections"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:text="Get Directions"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/bg_gradient_button"
+                    android:elevation="5dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2: Compost Facility -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCompost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#E0F7FA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgCompost"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/unitcompost"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="Composting Facility"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tvCompostName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City Composting Unit"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:gravity="center"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvCompostLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Eco Park, Ward 7"
+                    android:textColor="@color/grayDark"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvCompostTiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timings: 8:00 AM – 5:00 PM"
+                    android:textColor="@color/grayDark"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnCompostDirections"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_gradient_button"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:text="Get Directions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3: Waste-to-Energy Plant -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEnergyPlant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#FFF8E1"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgEnergy"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_energy"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="Energy Plant"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tvEnergyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waste-to-Energy Plant"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:gravity="center"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvEnergyLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Industrial Zone, Block C"
+                    android:textColor="@color/grayDark"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvEnergyTiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timings: 10:00 AM – 4:00 PM"
+                    android:textColor="@color/grayDark"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/btnEnergyDirections"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:text="Get Directions"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/bg_gradient_button"                    android:elevation="5dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

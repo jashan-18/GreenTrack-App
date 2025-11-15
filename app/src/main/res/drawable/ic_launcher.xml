@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M54,0A54,54 0,1,1 0,54A54,54 0,0,1 54,0z" />
+
+    <!-- Gradient Green Leaf -->
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M54,18C38,30 34,46 48,66C62,46 58,30 54,18z"
+        android:fillColor="#4CAF50" />
+
+    <!-- Second Leaf -->
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M54,18C70,30 74,46 60,66C46,46 50,30 54,18z"
+        android:fillColor="#2E7D32" />
+
+    <!-- Stem -->
+    <path
+        android:pathData="M54,18 L54,72"
+        android:strokeWidth="4"
+        android:strokeColor="#388E3C"
+        android:strokeLineCap="round" />
+
+    <!-- Subtle Highlight -->
+    <path
+        android:pathData="M54,18C38,30 36,44 48,62"
+        android:strokeWidth="2"
+        android:strokeColor="#81C784"
+        android:strokeLineCap="round" />
+</vector>

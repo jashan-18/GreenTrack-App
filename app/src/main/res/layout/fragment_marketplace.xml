@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".MarketplaceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvMarketplaceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Marketplace"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvMarketplaceIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy, sell or donate recyclable materials and eco-products. Let’s make recycling rewarding!"
+            android:textSize="16sp"
+            android:textColor="@color/grayDark"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Card 1: Recycled Plastic Pots -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPlasticPots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E8F5E9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/background"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgPlasticPots"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/recycl2"
+                    android:contentDescription="Recycled Plastic Pots"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvItemName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recycled Plastic Pots"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvItemDesc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eco-friendly pots made from recycled plastic. Durable, lightweight, and sustainable."
+                    android:textSize="15sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹150 / set"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryVariant"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Buy Button 1 -->
+                    <Button
+                        android:id="@+id/btnBuy1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Buy"
+                        android:textSize="18sp"
+                        android:textColor="@color/material_dynamic_neutral_variant90"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAlignment="center"
+
+                        android:background="@drawable/bg_gradient_button"
+
+                        android:elevation="5dp" />
+
+
+                    <Button
+                        android:id="@+id/btnContactSeller1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Contact Seller"
+                        android:textColor="@color/onPrimary"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_gradient_button"
+                        android:elevation="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2: Organic Compost -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCompost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E0F7FA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgCompostBag"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_rewards"
+                    android:contentDescription="Organic Compost"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvItemName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organic Compost (5kg)"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvItemDesc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rich organic compost made from wet waste. Great for kitchen gardens and soil health."
+                    android:textSize="15sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹120 / bag"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryVariant"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Buy Button 2 -->
+                    <Button
+                        android:id="@+id/btnBuy2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Buy"
+                        android:textSize="18sp"
+                        android:textColor="@color/material_dynamic_neutral_variant90"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAlignment="center"
+
+                        android:background="@drawable/bg_gradient_button"
+
+                        android:elevation="5dp" />
+
+
+                    <Button
+                        android:id="@+id/btnContactSeller2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Contact Seller"
+                        android:textSize="13dp"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_gradient_button"
+                        android:elevation="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

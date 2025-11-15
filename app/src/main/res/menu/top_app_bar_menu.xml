@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_dashboard"
+        android:icon="@drawable/ic_recycle"
+        android:title="Dashboard"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_training"
+        android:icon="@drawable/ic_rewards"
+        android:title="Training"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_reports"
+        android:icon="@drawable/ic_report"
+        android:title="Reports"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_facility"
+        android:icon="@drawable/ic_location"
+        android:title="Facility Locator"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_marketplace"
+        android:icon="@drawable/ic_shop"
+        android:title="Marketplace"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_champion"
+        android:icon="@drawable/ic_rewards"
+        android:title="Champion"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_phone"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/primary">
+
+    <!-- Simple rounded recycle symbol -->
+    <path
+        android:fillColor="@android:color/black"
+        android:pathData="M12,2a10,10 0,1 0,10 10A10,10 0,0 0,12,2ZM17.65,6.35a8,8 0,0 1,0,11.31A8,8 0,0 1,6.34,6.35a8,8 0,0 1,11.31,0ZM8.47,9.06l1.06,1.06a0.75,0.75 0,0 1,-1.06,1.06L6.35,9.06a0.75,0.75 0,0 1,0,-1.06L8.47,5.88a0.75,0.75 0,0 1,1.06,1.06L8.47,9.06ZM15.53,14.94l-1.06,-1.06a0.75,0.75 0,0 1,1.06,-1.06l2.12,2.12a0.75,0.75 0,0 1,0,1.06l-2.12,2.12a0.75,0.75 0,0 1,-1.06,-1.06Zm-3.53,0a2.5,2.5 0,1 1,0,-5,2.5,2.5 0,0 1,0,5Z" />
+</vector>

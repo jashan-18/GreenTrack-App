@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".ChampionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvChampionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Champions"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvChampionIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet your local Green Champions — citizens leading change through waste awareness, segregation, and sustainability."
+            android:textSize="16sp"
+            android:textColor="@color/grayDark"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Champion Info Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardChampionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#E8F5E9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgChampion"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/profile"
+                    android:contentDescription="Champion Photo"
+                    android:background="@drawable/bg_card"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tvChampionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ankit Poddar"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvChampionArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area: Ward 12 – Green Valley"
+                    android:textSize="16sp"
+                    android:textColor="@color/grayDark"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvChampionContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact: +91 98765 43210"
+                    android:textSize="15sp"
+                    android:textColor="@color/primaryVariant"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnContactChampion"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Contact Champion"
+                    android:textColor="@color/onPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:background="@drawable/bg_gradient_button"
+                    android:elevation="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Champion Stats Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardChampionStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#E0F7FA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvStatsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Champion Performance"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvIssuesResolved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Issues Resolved: 42"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="6dp"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvCitizensTrained"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Citizens Trained: 128"
+                    android:textSize="16sp"
+                    android:textColor="@color/grayDark"
+                    android:layout_marginBottom="6dp"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvEventsOrganized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clean-up Drives: 7"
+                    android:textSize="16sp"
+                    android:textColor="@color/grayDark"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressChampionImpact"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:progress="80"
+                    android:max="100"
+                    android:progressTint="@color/primary"
+                    android:backgroundTint="@color/grayLight"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvChampionImpact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Impact Score: 80%"
+                    android:textSize="16sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnViewReports"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="View Reports"
+                android:textColor="@color/onPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:elevation="4dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnNominateChampion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Nominate New"
+                android:textColor="@color/onPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:elevation="4dp"
+                android:background="@drawable/bg_gradient_button"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

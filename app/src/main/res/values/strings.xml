@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">GreenTrack</string>
+
+    <!-- Splash -->
+    <string name="tagline">Smart Waste. Clean Future.</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome to GreenTrack</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="btn_login">Login / Continue</string>
+    <string name="login_error_empty">Please enter your phone number</string>
+    <string name="login_error_invalid">Enter a valid 10-digit phone number</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Today\'s Waste Report</string>
+    <string name="dashboard_subtitle">Segregated: 72% | Treated: 54%</string>
+
+    <!-- Marketplace -->
+    <string name="marketplace_title">Marketplace</string>
+    <string name="shop_bins">Shop Compost Kits</string>
+
+    <!-- Facility Locator -->
+    <string name="facility_title">Facilities</string>
+    <string name="facility_desc">Nearby recycling and biogas centers</string>
+
+    <!-- Rewards -->
+    <string name="rewards_title">Rewards</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

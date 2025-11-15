@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 🌿 Primary Eco Palette -->
+    <color name="primary">#0B6E4F</color> <!-- Deep eco green -->
+    <color name="primaryVariant">#107D5A</color> <!-- Slightly brighter for FABs -->
+    <color name="secondary">#FFD166</color> <!-- Warm yellow accent -->
+    <color name="accent">#06AED5</color> <!-- Aqua blue for highlights -->
+
+    <!-- 🧱 Base Colors -->
+    <color name="background">#F7FFF7</color> <!-- Soft eco background -->
+    <color name="surface">#FFFFFF</color> <!-- For cards/toolbars -->
+    <color name="error">#E63946</color> <!-- Red for error states -->
+
+    <!-- 🖋️ Text Colors -->
+    <color name="onPrimary">#FFFFFF</color> <!-- For text/icons on green -->
+    <color name="onSecondary">#000000</color> <!-- Optional for yellow text surfaces -->
+    <color name="onBackground">#0B2E2A</color> <!-- Deep forest text -->
+    <color name="onSurface">#333333</color> <!-- For normal body text -->
+
+    <!-- 🌅 Neutral Shades -->
+    <color name="grayLight">#EAEAEA</color> <!-- Softer card borders -->
+    <color name="grayDark">#5A5A5A</color> <!-- Subtle neutral text -->
+
+</resources>

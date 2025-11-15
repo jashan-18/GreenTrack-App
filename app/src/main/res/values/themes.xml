@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme -->
+<style name="Theme.GreenTrack" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <!-- Primary branding colors -->
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryVariant">@color/primaryVariant</item>
+    <item name="colorSecondary">@color/secondary</item>
+    <item name="colorOnPrimary">@color/onPrimary</item>
+    <item name="android:statusBarColor">@color/primaryVariant</item>
+
+    <!-- Background and surface -->
+    <item name="android:windowBackground">@color/background</item>
+    <item name="colorSurface">@color/surface</item>
+
+    <!-- Customize default text color -->
+    <item name="android:textColorPrimary">@color/onBackground</item>
+    <item name="android:textColorSecondary">@color/grayDark</item>
+
+    <!-- Button Styles -->
+    <item name="materialButtonStyle">@style/Widget.GreenTrack.Button</item>
+
+    <!-- Fonts -->
+
+
+    <!-- Tooling -->
+    <item name="android:navigationBarColor">@color/primary</item>
+</style>
+
+<!-- Light Theme Variant -->
+<style name="Theme.GreenTrack.Light" parent="Theme.GreenTrack">
+    <item name="android:windowLightStatusBar">true</item>
+</style>
+
+<!-- Dark Theme Variant -->
+<style name="Theme.GreenTrack.Dark" parent="Theme.GreenTrack">
+    <item name="android:windowBackground">#121212</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:textColorSecondary">#CCCCCC</item>
+</style>
+</resources>

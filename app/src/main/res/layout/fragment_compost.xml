@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".CompostFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvCompostTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compost Management"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvCompostIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn how to turn your kitchen waste into nutrient-rich compost for your garden. Track your composting progress and learn eco-friendly techniques."
+            android:textSize="16sp"
+            android:textColor="@color/grayDark"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Compost Info Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCompostInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#E8F5E9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imgCompostBin"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/compost"
+                    android:contentDescription="Compost Bin"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvCompostTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Composting Tip:\nMix dry leaves and wet waste in a 1:1 ratio for better results."
+                    android:textColor="@color/primary"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnLearnCompost"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Learn Composting"
+                    android:textColor="@color/onPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_gradient_button" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Compost Progress Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCompostProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#E0F7FA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvProgressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Compost Progress"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <ProgressBar
+                    android:id="@+id/progressCompost"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:progress="65"
+                    android:max="100"
+                    android:layout_marginHorizontal="20dp"
+                    android:progressTint="@color/primary"
+                    android:backgroundTint="@color/grayLight"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvProgressPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="65% Complete"
+                    android:textSize="16sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Video / Resource Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnWatchVideo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Watch Video"
+                android:textColor="@color/onPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:elevation="4dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnReadGuide"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Read Guide"
+                android:textColor="@color/onPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:elevation="4dp"
+                android:background="@drawable/bg_gradient_button"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

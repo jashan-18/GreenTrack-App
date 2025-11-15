@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".DashboardFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- 🌿 Header -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to GreenTrack 🌿"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 📊 Stats Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/surface"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/tvStatsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Eco Impact 🌱"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:background="@color/primaryVariant"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/tvWasteCollected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waste Collected Today: 6.0 kg"
+                    android:textSize="17sp"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvCompostMade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compost Produced: 1.3 kg"
+                    android:textSize="17sp"
+                    android:textColor="@color/primaryVariant"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonSaved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carbon Saved: 0.9 kg"
+                    android:textSize="16sp"
+                    android:textColor="@color/grayDark"
+                    android:gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🚀 Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnReportIssue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="52dp"
+                android:text="Report Issue"
+                android:textColor="@color/onPrimary"
+                android:background="@drawable/bg_gradient_button"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:elevation="3dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnMarketplace"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="52dp"
+                android:text="Marketplace"
+                android:textColor="@color/onPrimary"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:elevation="3dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- ⚡ Quick Access Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardQuickLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/surface"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title (Unchanged) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:text="Quick Access"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- GridLayout for Buttons -->
+                <GridLayout
+                    android:id="@+id/gridQuickAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="true"
+                    android:rowCount="6"
+                    android:rowOrderPreserved="false"
+                    android:useDefaultMargins="true">
+
+                    <!-- 👤 Profile -->
+                    <Button
+                        android:id="@+id/btnProfile"
+
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Profile"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 🏫 Training -->
+                    <Button
+                        android:id="@+id/btnTraining"
+
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Training"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- ♻ Compost -->
+                    <Button
+                        android:id="@+id/btnCompost"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Compost"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 🚚 Collection -->
+                    <Button
+                        android:id="@+id/btnCollection"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Collection"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 🥇 Champion -->
+                    <Button
+                        android:id="@+id/btnChampion"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Champion"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 🗺 Facility -->
+                    <Button
+                        android:id="@+id/btnFacility"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Facility"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 📊 Reports -->
+                    <Button
+                        android:id="@+id/btnReports"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Reports"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 💰 Rewards -->
+                    <Button
+                        android:id="@+id/btnRewards"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Rewards"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 🔔 Notifications -->
+                    <Button
+                        android:id="@+id/btnNotifications"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Notifications"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- ⚙ Settings -->
+                    <Button
+                        android:id="@+id/btnSettings"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Settings"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                    <!-- 🛒 Marketplace -->
+                    <Button
+                        android:id="@+id/btnMarketplaceDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+
+                        android:background="@drawable/rounded_button"
+                        android:elevation="3dp"
+                        android:text="Marketplace"
+                        android:textColor="@color/onPrimary"
+                        android:textStyle="bold" />
+
+                </GridLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
